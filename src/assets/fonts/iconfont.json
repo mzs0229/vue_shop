@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "587162",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e830",
+      "unicode_decimal": 59440
+    },
+    {
+      "icon_id": "6664187",
+      "name": "password",
+      "font_class": "password",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "11219384",
+      "name": "user",
+      "font_class": "user1",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "11474219",
+      "name": "all",
+      "font_class": "all",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    },
+    {
+      "icon_id": "15523234",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    }
+  ]
+}
