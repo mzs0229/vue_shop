@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       loginForm: {
         username: 'admin',
@@ -60,17 +60,16 @@ export default {
   },
 
   methods: {
-    resetLoginForm () {
-      //   console.log(this);
+    resetLoginForm() {
       this.$refs.loginFormRef.resetFields()
     },
-    login () {
-      this.$refs.loginFormRef.validate(async (valid) => {
+    login() {
+      this.$refs.loginFormRef.validate(async valid => {
         if (!valid) return
         const { data: res } = await this.$http.post('login', this.loginForm)
         if (res.meta.status !== 200) return this.$message.error('登录失败')
         this.$message.success('登陆成功')
-        // console.log(res);
+
         window.sessionStorage.setItem('token', res.data.token)
         this.$router.push('/home')
       })
