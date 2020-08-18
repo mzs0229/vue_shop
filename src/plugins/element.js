@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import {
+  Alert,
   Button,
   Form,
   FormItem,
@@ -20,6 +21,8 @@ import {
   Option,
   Row,
   Col,
+  Tabs,
+  TabPane,
   Table,
   TableColumn,
   Switch,
@@ -32,6 +35,7 @@ import {
 
 } from 'element-ui'
 
+Vue.use(Alert)
 Vue.use(Button)
 Vue.use(Form)
 Vue.use(FormItem)
@@ -51,6 +55,8 @@ Vue.use(Select)
 Vue.use(Option)
 Vue.use(Row)
 Vue.use(Col)
+Vue.use(Tabs)
+Vue.use(TabPane)
 Vue.use(Table)
 Vue.use(TableColumn)
 Vue.use(Switch)
