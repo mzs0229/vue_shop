@@ -8,6 +8,8 @@ import {
   Message,
   Container,
   Cascader,
+  CheckboxGroup,
+  Checkbox,
   Header,
   Aside,
   Main,
@@ -18,6 +20,8 @@ import {
   BreadcrumbItem,
   Card,
   Select,
+  Step,
+  Steps,
   Option,
   Row,
   Col,
@@ -32,39 +36,45 @@ import {
   MessageBox,
   Tag,
   Tree,
+  Upload
 
 } from 'element-ui'
 
 Vue.use(Alert)
-Vue.use(Button)
-Vue.use(Form)
-Vue.use(FormItem)
-Vue.use(Input)
-Vue.use(Container)
-Vue.use(Cascader)
-Vue.use(Header)
 Vue.use(Aside)
-Vue.use(Main)
-Vue.use(Menu)
-Vue.use(Submenu)
-Vue.use(MenuItem)
+Vue.use(Button)
 Vue.use(Breadcrumb)
 Vue.use(BreadcrumbItem)
-Vue.use(Card)
-Vue.use(Select)
-Vue.use(Option)
-Vue.use(Row)
 Vue.use(Col)
+Vue.use(Card)
+Vue.use(Container)
+Vue.use(Cascader)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Dialog)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Header)
+Vue.use(Input)
+Vue.use(Main)
+Vue.use(Menu)
+Vue.use(MenuItem)
+Vue.use(Option)
+Vue.use(Pagination)
+Vue.use(Row)
+Vue.use(Select)
+Vue.use(Step)
+Vue.use(Steps)
+Vue.use(Submenu)
+Vue.use(Switch)
 Vue.use(Tabs)
 Vue.use(TabPane)
 Vue.use(Table)
 Vue.use(TableColumn)
-Vue.use(Switch)
 Vue.use(Tooltip)
-Vue.use(Pagination)
-Vue.use(Dialog)
 Vue.use(Tag)
 Vue.use(Tree)
+Vue.use(Upload)
 
 
 Vue.prototype.$message = Message
