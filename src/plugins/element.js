@@ -40,6 +40,9 @@ import {
 
 } from 'element-ui'
 
+import Timeline from './timeline/index.js'
+import TimelineItem from './timeline-item/index.js'
+
 Vue.use(Alert)
 Vue.use(Aside)
 Vue.use(Button)
@@ -74,6 +77,8 @@ Vue.use(TableColumn)
 Vue.use(Tooltip)
 Vue.use(Tag)
 Vue.use(Tree)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 Vue.use(Upload)
 
 
