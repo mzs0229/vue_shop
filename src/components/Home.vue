@@ -10,31 +10,13 @@
     <el-container>
       <el-aside :width="isCollapse ? '64px' : '200px'">
         <div class="toggle-button" @click="toggleCollapse">||||</div>
-        <el-menu
-          background-color="#333744"
-          text-color="#fff"
-          active-text-color="#409EFF"
-          unique-opened
-          :collapse="isCollapse"
-          :collapse-transition="false"
-          router
-          :default-active="activePath"
-        >
-          <el-submenu
-            :index="item.id + ''"
-            v-for="item in menulist"
-            :key="item.id"
-          >
+        <el-menu background-color="#333744" text-color="#fff" active-text-color="#409EFF" unique-opened :collapse="isCollapse" :collapse-transition="false" router :default-active="activePath">
+          <el-submenu :index="item.id + ''" v-for="item in menulist" :key="item.id">
             <template slot="title">
               <i :class="iconsObj[item.id]"></i>
               <span>{{ item.authName }}</span>
             </template>
-            <el-menu-item
-              :index="'/' + subItem.path"
-              v-for="subItem in item.children"
-              :key="subItem.id"
-              @click="saveNavState('/' + subItem.path)"
-            >
+            <el-menu-item :index="'/' + subItem.path" v-for="subItem in item.children" :key="subItem.id" @click="saveNavState('/' + subItem.path)">
               <template slot="title">
                 <i class="el-icon-menu"></i>
                 <span>{{ subItem.authName }}</span>
